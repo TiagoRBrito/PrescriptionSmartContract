@@ -1,0 +1,150 @@
+/* Reset browser styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  position: fixed; 
+  top: 0; 
+}
+
+body {
+  font-family: Arial;
+  line-height: 1.5;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 90%;
+  margin:  0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.section-header{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background-color: #3b89ff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+/* Vote Form Section */
+form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #3b89ff;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #3c89fd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type=button]{
+    border: 1px solid #0066ff;
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Vote details section */
+.vote-detail-section{
+  display: none; /* hidden by default */
+}
+
+.vote-details {
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #3b89ff;
+}
+
+.vote-detail-heading {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.section-footer{
+  display: flex;
+  gap: 12px;
+}
+
+.show-vote-form-btn, .refresh-vote-details-btn{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.show-vote-form-btn{
+  background-color: #4CAF50;
+}
+
+.refresh-vote-details-btn{
+  background-color: #00a8ff;
+}
+  
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: arial;
+  min-width: 400px;
+  box-shadow: 0 0 20px #00a8ff;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  table-layout:fixed;
+}
+
+thead tr {
+  background-color: #3b89ff;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 12px 15px;
+  word-wrap:break-word;
+  white-space: pre-wrap;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3b89ff;
+}
+
+tbody tr.active-row {
+  font-weight: bold;
+  color: #000000;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
